@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Favorite's and Skills</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #000;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .menu-home {
+            top: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            z-index: 9999;
+            transition: background-color 0.3s ease;
+        }
+        .menu-home:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: rgb(253, 253, 253);
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(6, 176, 206, 0.87);
+            padding: 30px;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #000;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #6c5ce7, #08b6eb);
+            border-radius: 2px;
+        }
+        .Skill-item {
+            background: #f0f3f8;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        .Skill-item h3 {
+            font-size: 1.5rem;
+            color: #1e2b37;
+            margin-bottom: 5px;
+        }
+        .skills-interests {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        @media (max-width: 700px) {
+            .skills-interests {
+                grid-template-columns: 1fr;
+            }
+        }
+        .Fav ul {
+            list-style: none;
+            background: #fafbfc;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .Fav-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            background: #fafbfc;
+            padding: 20px;
+            border-radius: 12px;
+            text-decoration: none;
+        }
+        .Fav-item {
+            background: white;
+            padding: 12px 8px;
+            text-align: center;
+            border-radius: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            transition: transform 0.2s;
+        }
+        .Fav-item:hover {
+            transform: scale(1.02);
+            background: #6c5ce7;
+            color: white;
+        }
+        .Fav-item span {
+            font-size: 1.3rem;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #ccc, transparent);
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="Home.html" class="menu-home">HOME</a>
+    <div class="Skill">
+        <section class="Skill">
+            <h2>Skills</h2>
+            <div class="Skill-item">
+                <h3>Komunkasi Bisnis</h3>
+            </div>
+            <div class="Skill-item">
+                <h3>Berbahasa Inggris</h3>
+            </div>
+            <div class="Skill-item">
+                <h3>Sains dan Teknologi</h3>
+            </div>
+            <div class="Skill-item">
+                <h3>Web Design</h3>
+            </div>
+        </section>
+        <section class="Fav">
+            <h2>Fav Things</h2>
+            <div class="Fav-grid">
+                <a href="https://open.spotify.com/playlist/1fo3VFISn2MoE2xPqBXgWP?si=vAeQwgfFTq2U3OXIkXa9gg" target="_blank">
+                    <div class="Fav-item"><span><i class="fab fa-music"></i></span>Musik dan Album</div>
+                </a>
+                <a href="https://www.youtube.com/@windahbasudara" target="_blank">
+                    <div class="Fav-item"><span><i class="fab fa-youtube"></i></span>Youtube Channel</div>
+                </a>
+            </div>
+        </section>
+        </div>
+
+        <hr>
+        <footer>
+            © 2025 - Muhammad Sheva Iqbal Aljawwad Fav's.
+        </footer>
+    </div>
+</body>
+</html>

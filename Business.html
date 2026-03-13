@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Berbisnis Dengan Sheva</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+        .menu-home {
+            position: fixed;
+            top: 20px;
+            left: 10px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            box-shadow: 0 10px 30px rgba(6, 176, 206, 0.87);
+            z-index: 9999;
+            transition: background-color 0.3s ease;
+        }
+        .menu-home:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            max-width: 1000px;
+            width: 100%;
+            background-color: white;
+            border-radius: 20px;
+            box-shadow: 0 10px 30px rgba(6, 176, 206, 0.87);
+            overflow: hidden;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+        .foto-side{
+            width: 100%;
+            min-height: 300px;
+            background-image: url('https://via.placeholder.com/600x800');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .teks-side {
+            width: 100%;
+            padding: 40px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+        .teks-side h1 {
+            font-size: 2.5rem;
+            font-weight: 600;
+            color: #333;
+            margin-bottom: 20px;
+            line-height: 1.2;
+        }
+        .teks-side p {
+            font-size: 1.1rem;
+            color: #666;
+            margin-bottom: 30px;
+            max-width: 500px;
+        }
+        .sosial-media {
+            display: flex;
+            gap: 20px;
+        }
+        .sosial-media a {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            width: 50px;
+            height: 50px;
+            background-color: #4267B2;
+            color: white;
+            border-radius: 50%;
+            font-size: 1.8rem;
+            transition: transform 0.3s, background-color 0.3s;
+            text-decoration: none;
+        }
+        .sosial-media a.instagram {
+            background-color: #E1306C;
+        }
+        .sosial-media a:hover {
+            transform: scale(1.1);
+            opacity: 0.9;
+        }
+        @media (max-width: 700px) {
+            .container {
+                flex-direction: column;
+            }
+            .foto-side {
+                min-height: 250px;
+            }
+            .teks-side {
+                padding: 30px;
+            }
+            .teks-side h1 {
+                font-size: 2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="Home.html" class="menu-home">HOME</a>
+    <div class="container">
+        <div class="foto-side" style="background-image: url('ALLGAME.jpg');">
+        </div>
+
+        <div class="teks-side">
+            <h1>Business With Me?</h1>
+            <p>Saya memiliki bisnis Jual Beli game Online yang sudah saya tekuni selama beberapa tahun.</p>
+            <table border ="0">
+                <tr>
+                    <td><img src = "FBKN.jpg" alt="FBKN" alt="Facebook Profil" style="width: 250px; height: auto; margin-bottom: 20px;"></td>
+                    <td><img src = "IGKN.jpg" alt="Instagram Profil" style="width: 250px; height: auto; margin-bottom: 20px;"></td>
+                </tr>
+            </table>
+            <p>Foto tersebut adalah platform media sosial yang saya miliki dan bisa dikunjungi untuk melakukan pembelian item/akun Game Online seperti Free Fire, Mobile Legend, Pubg Mobile.</p>
+            <p>Ketuk laman Instagram/Facebook dibawah untuk mengunjungi media sosial yang saya miliki.</p>
+            <div class="sosial-media">
+                <a href="https://www.instagram.com/iqbal.trust" class="instagram" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://www.facebook.com/kni.abal" target="_blank"><i class="fab fa-facebook-f"></i></a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

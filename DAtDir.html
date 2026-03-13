@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Muhammad Sheva Iqbal Aljawwad - Future Engineer</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f9f9f9;
+            color: #000;
+            line-height: 1.6;
+            padding: 20px;
+        }
+        .menu-home {
+            top: 20px;
+            right: 20px;
+            background-color: #007bff;
+            color: #fff;
+            padding: 12px 24px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-family: Arial, sans-serif;
+            font-weight: bold;
+            font-size: 16px;
+            z-index: 9999;
+            transition: background-color 0.3s ease;
+        }
+        .menu-home:hover {
+            background-color: #0056b3;
+        }
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 50px;
+            box-shadow: 0 10px 30px rgba(6, 176, 206, 0.87);
+            padding: 30px;
+        }
+        h2 {
+            font-size: 2rem;
+            margin-top: 0;
+            margin-bottom: 20px;
+            color: #000;
+            position: relative;
+            padding-bottom: 10px;
+        }
+        h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            height: 8px;
+            background: linear-gradient(90deg, #6c5ce7, #08b6eb);
+            border-radius: 2px;
+        }
+        .about p {
+            font-size: 1.1rem;
+            margin-bottom: 30px;
+            text-align: justify;
+            background: #f4f6fa;
+            padding: 20px;
+            border-radius: 12px;
+            border-left: 5px solid #6c5ce7;
+        }
+        .education-item {
+            background: #f0f3f8;
+            padding: 20px;
+            border-radius: 12px;
+            margin-bottom: 10px;
+        }
+        .education-item h3 {
+            font-size: 1.5rem;
+            color: #1e2b37;
+            margin-bottom: 5px;
+        }
+        .education-item .date {
+            font-weight: 600;
+            color: #2b6cce;
+            margin-bottom: 10px;
+            font-size: 1rem;
+        }
+        .skills-interests {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-top: 20px;
+        }
+        @media (max-width: 700px) {
+            .skills-interests {
+                grid-template-columns: 1fr;
+            }
+        }
+        .Hobby ul {
+            list-style: none;
+            background: #fafbfc;
+            padding: 20px;
+            border-radius: 50px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+        }
+        .Hobby-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr);
+            gap: 15px;
+            background: #fafbfc;
+            padding: 20px;
+            border-radius: 12px;
+        }
+        .Hobby-item {
+            background: white;
+            padding: 12px 8px;
+            text-align: center;
+            border-radius: 30px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+            font-weight: 500;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 5px;
+            transition: transform 0.2s;
+        }
+        .Hobby-item:hover {
+            transform: scale(1.02);
+            background: #6c5ce7;
+            color: white;
+        }
+        .Hobby-item span {
+            font-size: 1.3rem;
+        }
+        footer {
+            text-align: center;
+            margin-top: 40px;
+            color: #aaa;
+            font-size: 0.9rem;
+        }
+        hr {
+            border: none;
+            height: 1px;
+            background: linear-gradient(90deg, transparent, #ccc, transparent);
+            margin: 30px 0;
+        }
+    </style>
+</head>
+<body>
+    <a href="Home.html" class="menu-home">HOME</a>
+    <div class="container">
+        <section class="about">
+            <h2>Tentang Saya</h2>
+            <p> Saya adalah seorang Siswa dari SMA Negeri 1 Kalianda  yang memiliki keinginan besar untuk sukses dan termotivasi untuk terus belajar dan berkembang terutama di bidang Science dan Teknologi.
+            <BR><BR> Di masa - masa sekolah ini, saya cukup aktif mengikuti kegiatan kegiatan sekolah yang tentunya meningkatkan soft-skill dan hard-skill yang saya miliki untuk menunjang diri saya di masa depan.
+            <BR><BR> Selain di bidang akademik, saya juga memiliki ketertarikan tersendiri di bidang Market dan Bisnis, Manajement keuangan.</p>
+        </section>
+        <section class="education">
+            <h2>Jejak Pendidikan</h2>
+            <div class="education-item">
+                <h3>SMA Negeri 1 Kalianda</h3>
+                <div class="date">2024 - Sekarang</div>
+            </div>
+            <div class="education-item">
+                <h3>SMP Negeri 1 Sidomulyo</h3>
+                <div class="date">2021 - 2024</div>
+            </div>
+            <div class="education-item">
+                <h3>SD Negeri 1 Sidorejo</h3>
+                <div class="date">2018 - 2021</div>
+            </div>
+            <div class="education-item">
+                <h3>SD Negeri 1 Medaeng Waru</h3>
+                <div class="date">2016 - 2018</div>
+            </div>
+        </section>
+        <section class="Hobby">
+            <h2>Hobby</h2>
+            <div class="Hobby-grid">
+                <div class="Hobby-item"><span>🏀</span>Basket</div>
+                <div class="Hobby-item"><span>🏃️</span>Running</div>
+                <div class="Hobby-item"><span>🏊️</span>Swimming</div>
+                <div class="Hobby-item"><span>🎮</span>Gaming</div>
+            </div>
+        </section>
+        </div>
+        <hr>
+        <footer>
+            © 2025 - Muhammad Sheva Iqbal Aljawwad Portofolio.
+        </footer>
+    </div>
+</body>
+</html>

@@ -1,0 +1,101 @@
+<html>
+  <font color = black>
+<style>
+ * {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+.main-content{
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+}
+header {
+  text-align: center;
+  margin-bottom: 20px;
+}
+header h1 {
+ font-size: 2.2rem;
+ letter-spacing: 4px;
+ color: #222;
+  margin-bottom: 5px;
+}
+header p {
+  font-size: 1rem;
+  color: #555;
+  font-style: italic;
+  border-bottom: 1px solid #ccc;
+  padding-bottom: 15px;
+}
+nav ul {
+  list-style: none;
+  gap: 30px;
+  justify-content: center;
+  padding: 15px 15px;
+}
+nav li{
+  margin: 10px 0;
+}
+nav ul li a {
+  text-decoration: none;
+  color: #333;
+  font-weight: 600;
+  font-size: 1.1rem;
+  transition: color 0.3s;
+  display: inline-block;
+  padding: 5px 0;
+}
+nav ul li a:hover {
+  color: #007acc;
+}
+footer {
+  text-align: center;
+  padding: 15px 0;
+  border-top: 1px solid #ccc;
+  color: #666;
+  font-size: 0.9rem;
+}
+.foto-lingkaran {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+</style>
+</head>
+<body>
+	<p align = center>
+  <img src="Profill.jpg" class="foto-lingkaran">
+<div class="main-content">
+        <header>
+            <h1>Sheva Iqbal</h1>
+            <p>Future Engineer</p>
+        </header>
+
+        <nav>
+            <ul>
+                <li><a href="#"">HOME</a></li>
+                <li><a href="DAtDir.html" target="_blank"> ABOUT </a></li>
+                <li><a href="Fav.html" target="_blank">FAVORITES AND SKILLS</a></li>
+                <li><a href="Business.html" target="_blank">BUSINESS</a></li>
+                <li><a href="contact.html" target="_blank">CONTACT</a></li>
+            </ul>
+        </nav>
+    </div>
+
+    <footer>
+        <p>© Copyright ©2026 All rights reserved</p>
+    </footer>
+</body>
+</html>
